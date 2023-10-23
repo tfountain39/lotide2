@@ -1,15 +1,5 @@
-// TEST FUNCTION
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// IMPORT
+const eqArrays = require('./eqArrays.js')
 
 // MAIN FUNCTION
 // This function determines if two arrays are equal to each other
@@ -20,14 +10,5 @@ const assertArraysEqual = function(array1, array2) {
     : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
 
-
-// TEST CODE
-const array1 = [1, 2, 3];
-const array2 = [1, 2, 3];
-
-assertArraysEqual(array1, array2); // This should log: "✅ Assertion Passed: 1,2,3 and 1,2,3 are equal"
-
-const array3 = [1, 2, 3];
-const array4 = [1, 2, 4];
-
-assertArraysEqual(array3, array4); // This should log: "🛑 Assertion Failed: 1,2,3 and 1,2,4 are not equal"
+// EXPORT
+module.exports = assertArraysEqual;
