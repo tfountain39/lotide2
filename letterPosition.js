@@ -1,4 +1,4 @@
-
+// TEST FUNCTION
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -17,7 +17,7 @@ const assertArraysEqual = function(array1, array2) {
     ? console.log(`✅Assertion Passed: ${array1} and ${array2} are equal`)
     : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
-
+// MAIN FUNCTION
 const letterPosition = function(sentence) {
   // convert to lowercase
   const lowercasedSentence = sentence.toLowerCase();
@@ -44,6 +44,7 @@ const letterPosition = function(sentence) {
   return results;
 };
 
+// TEST CODE
 const result = letterPosition("hello world");
 assertArraysEqual(result['h'], [0]);
 assertArraysEqual(result['e'], [1]);

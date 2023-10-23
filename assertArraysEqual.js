@@ -1,4 +1,4 @@
-
+// TEST FUNCTION
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -11,6 +11,8 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+// MAIN FUNCTION
+// This function determines if two arrays are equal to each other
 const assertArraysEqual = function(array1, array2) {
   const arraysAreEqual = eqArrays(array1, array2);
   arraysAreEqual
@@ -18,6 +20,8 @@ const assertArraysEqual = function(array1, array2) {
     : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
 
+
+// TEST CODE
 const array1 = [1, 2, 3];
 const array2 = [1, 2, 3];
 

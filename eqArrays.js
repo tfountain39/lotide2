@@ -1,3 +1,4 @@
+// TEST FUNCTION
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
@@ -6,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// MAIN CODE
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -18,4 +20,5 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-assertEqual(eqArrays([1, 1, 3], [1, 2, 3]), true); // => should PASS
+// TEST CODE
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS

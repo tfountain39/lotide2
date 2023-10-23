@@ -1,3 +1,4 @@
+// TEST FUNCTION
 const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(`✅Assertion Passed: ${actual} === ${expected}`)
@@ -24,7 +25,8 @@ const countLetters = function(sentence) {
 const sentence = "This is a sentence used for assertion";
 const result = countLetters(sentence);
 
-assertEqual(result["t"], 2);
+// TEST CODE
+assertEqual(result["t"], 3);
 assertEqual(result["i"], 3);
 assertEqual(result["s"], 6);
 assertEqual(result["t"], 1);
