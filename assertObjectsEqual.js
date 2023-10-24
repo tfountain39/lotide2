@@ -3,7 +3,7 @@ const assertObjectEqual = function(object1, object2) {
   const isObject = (val) => {
     return val !== null && typeof val === 'object';
   };
-  // comparison logic,
+  // comparison logic, 
   // using stringify to deep compare
   const compareObjects = (obj1, obj2) => {
     // compare strings of arrays if data is arrays

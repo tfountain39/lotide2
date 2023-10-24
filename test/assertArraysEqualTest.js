@@ -1,9 +1,9 @@
-// TEST FUNCTION
+// TEST IMPORTS
 const assertArraysEqual = require('../assertArraysEqual.js');
 
 module.exports = assertArraysEqual;
 
-// TEST CODE
+// TEST ASSERTIONS
 const array1 = [1, 2, 3];
 const array2 = [1, 2, 3];
 

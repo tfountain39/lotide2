@@ -1,7 +1,7 @@
-// TEST FUNCTION
+// TEST IMPORTS
 const assertEqual = require('/home/labber/lighthouse/1-Week/lotide/assertEqual.js');
 
-// TEST CODE
+// TEST ASSERTIONS
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("Bootcamp", "Bootcamp");
