@@ -1,3 +1,5 @@
+// #assertArraysEqualTest
+
 // TEST IMPORTS
 const assertArraysEqual = require('../assertArraysEqual.js');
 

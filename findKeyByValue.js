@@ -1,4 +1,6 @@
-// TEST CODE
+// #findKeyByValue
+
+// TEST FUNCTION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅Assertion Passed: ${actual} === ${expected}`);
@@ -7,7 +9,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// FUNCTION CODE
+// MAIN FUNCTION
 const findKeyByValue = function(obj, value) {
   const keys = Object.keys(obj);
   for (const key of keys) {
@@ -17,7 +19,7 @@ const findKeyByValue = function(obj, value) {
   }
 };
 
-// TEST ASSUMPTIONS
+// TEST CODE
 const bestTVShowsByGenre = {
   sciFi: "Star Trek: TOS",
   comedy: "Friends",

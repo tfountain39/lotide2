@@ -1,3 +1,5 @@
+// #middleTest
+
 // TEST IMPORTS
 const assert = require('chai').assert;
 const middle = require('../middle');

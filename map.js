@@ -1,4 +1,6 @@
+// #map
 
+// TEST FUNCTION
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -17,7 +19,7 @@ const assertArrayEqual = function(array1, array2) {
     ? console.log(`✅Assertion Passed: ${array1} and ${array2} are equal`)
     : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
-// Main Code
+// MAIN FUNCTION
 const map = function(array, callback) {
   // Make a container array
   const length = [];
@@ -29,10 +31,9 @@ const map = function(array, callback) {
   return length;
 };
 
-// Inputs
+// TEST CODE
 const words = ["ground", "control", "to", "major", "tom"];
 
-// Test Code
 const results1 = map(words, word => word[0]);
 console.log(results1);
 

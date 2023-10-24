@@ -1,13 +1,16 @@
-// Test Function
+// #eqObjects
+
+// TEST FUNCTION
 const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(`✅Assertion Passed: ${actual} === ${expected}`)
     : console.log(`🛑Assertion Failed: ${actual} !== ${expected}`);
 };
 
+
+// MAIN FUNCTION
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-
 const eqObjects = function(obj1, obj2) {
   // obtain and list keys
   const keys1 = Object.keys(obj1);

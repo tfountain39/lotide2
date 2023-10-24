@@ -1,3 +1,5 @@
+// #head
+
 // MAIN CODE
 const head = function(arr) {
   return arr[0];

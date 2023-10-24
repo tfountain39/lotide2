@@ -1,6 +1,5 @@
-// TEST/ASSERTION FUNCTIONS
-
-// ACTUAL FUNCTION
+// #middle
+// ACTUAL FUNCTIONS
 const middle = function(array) {
   if (array.length <= 2) {
     return [];
@@ -16,4 +15,5 @@ const middle = function(array) {
   }
 };
 
+// EXPORTS
 module.exports = middle;

@@ -1,4 +1,6 @@
-// IMPORT FUNCTIONS
+// #assertArrayEqual
+
+// IMPORT
 const eqArrays = require('./eqArrays.js')
 
 // MAIN FUNCTION
@@ -10,5 +12,5 @@ const assertArraysEqual = function(array1, array2) {
     : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
 
-// EXPORT FUNCTIONS
+// EXPORT
 module.exports = assertArraysEqual;

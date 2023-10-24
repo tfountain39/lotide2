@@ -1,3 +1,5 @@
+// #assertEqualTest
+
 // TEST IMPORTS
 const assertEqual = require('/home/labber/lighthouse/1-Week/lotide/assertEqual.js');
 

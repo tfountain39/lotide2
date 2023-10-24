@@ -1,3 +1,6 @@
+// #assertObjectsEqual
+
+// MAIN FUNCTION
 const assertObjectEqual = function(object1, object2) {
   // Validate proper data type
   const isObject = (val) => {

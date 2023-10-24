@@ -1,10 +1,14 @@
+// #findKey
+
+// TEST FUNCTION
 const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(`✅Assertion Passed: ${actual} === ${expected}`)
     : console.log(`🛑Assertion Failed: ${actual} !== ${expected}`);
 };
 
-// Function Implementation
+
+// MAIN FUNCTION
 // This function finds a key in an object based on a callback function
 const findKey = function(object, callback) {
   // Grab all the keys from the object
@@ -19,7 +23,7 @@ const findKey = function(object, callback) {
   // If no key is found, return undefined
 };
 
-// Sample object
+// TEST CODE
 const result = findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },

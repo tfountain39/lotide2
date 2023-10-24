@@ -1,3 +1,5 @@
+// #countLetters
+
 // TEST FUNCTION
 const assertEqual = function(actual, expected) {
   actual === expected
@@ -5,6 +7,7 @@ const assertEqual = function(actual, expected) {
     : console.log(`🛑Assertion Failed: ${actual} !== ${expected}`);
 };
 
+// MAIN FUNCTION
 const countLetters = function(sentence) {
   const lowercasedSentence = sentence.toLowerCase();
   const splitSentence = lowercasedSentence.split('');

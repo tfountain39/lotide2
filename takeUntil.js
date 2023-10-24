@@ -1,4 +1,6 @@
-// TEST FUNCTION
+// #takeUntil
+
+// TEST FUNCTIONS
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -19,7 +21,7 @@ const assertArrayEqual = function(array1, array2) {
   : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
 
-// MAIN FUNCTION
+// MAIN FUNCTIONS
 const takeUntil = function(array, callback) {
   // Container
   const result = [];

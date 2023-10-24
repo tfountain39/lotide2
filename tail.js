@@ -1,4 +1,6 @@
-// MAIN FUNCTION
+// #tail
+
+// MAIN FUNCTIONS
 const tail = function(arr) {
   if (arr.length <= 1) {
     return [];
@@ -6,8 +8,6 @@ const tail = function(arr) {
     return arr.slice(1);
   }
 };
-
-
 
 // EXPORT
 module.exports = tail;

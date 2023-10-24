@@ -1,3 +1,5 @@
+// #assertEqual
+
 // MAIN FUNCTION
 // This function determines if two primitive data inputs are equal
 const assertEqual = function(actual, expected) {

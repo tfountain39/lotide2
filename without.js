@@ -1,4 +1,6 @@
-// TEST 
+// #without
+
+// TEST FUNCTIONS
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -18,11 +20,13 @@ const assertArrayEqual = function(array1, array2) {
     : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
 };
 
+// MAIN FUNCTIONS
 const without = function(source, itemsToRemove) {
   let sourceWithout = source.filter(item => !itemsToRemove.includes(item));
   return sourceWithout;
 };
 
+// TEST CODE
 const words = ["tree", "true", true];
 const result = without(words, ["tree"]);
 assertArrayEqual(result, ["true", true]);
