@@ -3,7 +3,6 @@
 // TEST IMPORTS
 const assertArraysEqual = require('../assertArraysEqual.js');
 
-module.exports = assertArraysEqual;
 
 // TEST ASSERTIONS
 const array1 = [1, 2, 3];

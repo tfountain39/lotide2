@@ -55,3 +55,6 @@ assertArraysEqual(result['o'], [4, 7]);
 assertArraysEqual(result['w'], [6]);
 assertArraysEqual(result['r'], [8]);
 assertArraysEqual(result['d'], [10]);
+
+// EXPORT
+module.exports = letterPosition;

@@ -28,3 +28,6 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Kaguya Sama: Love is War"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), "comedy");
+
+// EXPORT
+module.exports = findKeyByValue;

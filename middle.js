@@ -1,4 +1,5 @@
 // #middle
+
 // ACTUAL FUNCTIONS
 const middle = function(array) {
   if (array.length <= 2) {

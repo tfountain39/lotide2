@@ -4,7 +4,6 @@
 const eqArrays = require('./eqArrays.js')
 
 // MAIN FUNCTION
-// This function determines if two arrays are equal to each other
 const assertArraysEqual = function(array1, array2) {
   const arraysAreEqual = eqArrays(array1, array2);
   arraysAreEqual

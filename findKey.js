@@ -38,3 +38,6 @@ console.log(result);
 
 // Test the result to ensure it's correct
 assertEqual(result, "noma");
+
+// EXPORT
+module.exports = findKey;

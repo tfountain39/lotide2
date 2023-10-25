@@ -33,3 +33,6 @@ assertEqual(result["t"], 3);
 assertEqual(result["i"], 3);
 assertEqual(result["s"], 6);
 assertEqual(result["t"], 1);
+
+// EXPORT
+module.exports = countLetters;

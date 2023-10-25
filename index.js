@@ -10,3 +10,6 @@ module.exports = {
   tail,
   middle
 };
+
+// EXPORT
+module.exports = head;
