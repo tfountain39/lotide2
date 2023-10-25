@@ -1,8 +1,8 @@
 // #tailTest
 
 // TEST IMPORTS
-const tail = require('../tail');
 const assert = require('chai').assert;
+const tail = require('../tail');
 
 // TEST ASSERTIONS
 describe("#tail", () => {

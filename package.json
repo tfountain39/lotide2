@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@tfountain39/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lodash learning clone",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/tfountain39/lotide2.git"
   },
-  "author": "",
+  "author": "Todd F",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tfountain39/lotide2/issues"

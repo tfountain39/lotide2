@@ -1,24 +1,5 @@
 // #letterPosition
 
-// TEST FUNCTION
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  const arraysAreEqual = eqArrays(array1, array2);
-  arraysAreEqual
-    ? console.log(`✅Assertion Passed: ${array1} and ${array2} are equal`)
-    : console.log(`🛑Assertion Failed: ${array1} and ${array2} are not equal`);
-};
 // MAIN FUNCTION
 const letterPosition = function(sentence) {
   // convert to lowercase
@@ -46,15 +27,6 @@ const letterPosition = function(sentence) {
   return results;
 };
 
-// TEST CODE
-const result = letterPosition("hello world");
-assertArraysEqual(result['h'], [0]);
-assertArraysEqual(result['e'], [1]);
-assertArraysEqual(result['l'], [2, 3, 9]);
-assertArraysEqual(result['o'], [4, 7]);
-assertArraysEqual(result['w'], [6]);
-assertArraysEqual(result['r'], [8]);
-assertArraysEqual(result['d'], [10]);
 
 // EXPORT
 module.exports = letterPosition;

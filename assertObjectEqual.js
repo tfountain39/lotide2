@@ -40,35 +40,10 @@ const assertObjectEqual = function(object1, object2) {
     return true;
   };
 
-  // Use the compareObjects function and then log based on the result
-  if (compareObjects(object1, object2)) {
-    console.log("✅ Assertion Passed: The two objects are equal.");
-  } else {
-    console.log("🛑 Assertion Failed: The two objects are not equal.");
-  }
+  // Use the compareObjects function to compare the objects
+  return compareObjects(object1, object2);
 };
 
-const johnDoe1 = {
-  name: "John Doe",
-  address: {
-    street: '123 Side Street',
-    city: 'Menzoberranzan',
-    zipCode: '12345'
-  },
-  hobbies: ['levitating', 'worshipping', 'interacting with neighbours']
-};
-
-const johnDoe2 = {
-  name: "John Doe",
-  address: {
-    street: '123 Side Street',
-    city: 'Menzoberranzan',
-    zipCode: '12345'
-  },
-  hobbies: ['levitating', 'worshipping', 'interacting with neighbours']
-};
-
-assertObjectEqual(johnDoe1, johnDoe2);
 
 // EXPORT
 module.exports = assertObjectEqual;

@@ -1,7 +1,5 @@
 // #map
 
-
-
 // MAIN FUNCTION
 const map = function(array, callback) {
   // Make a container array

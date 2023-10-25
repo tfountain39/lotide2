@@ -1,16 +1,20 @@
 // #assertArraysEqualTest
 
 // TEST IMPORTS
-const assertArraysEqual = require('../assertArraysEqual.js');
-
+const assert = require('chai').assert;
+const assertArrayEqual = require('../assertArrayEqual.js');
 
 // TEST ASSERTIONS
-const array1 = [1, 2, 3];
-const array2 = [1, 2, 3];
+describe("#assertArrayEqual", () => {
+  it("should return true for [1, 2, 3] and [1, 2, 3]", () => {
+    const array1 = [1, 2, 3];
+    const array2 = [1, 2, 3];
+    assert.isTrue(assertArrayEqual(array1, array2));
+  });
 
-assertArraysEqual(array1, array2); // This should log: "✅ Assertion Passed: 1,2,3 and 1,2,3 are equal"
-
-const array3 = [1, 2, 3];
-const array4 = [1, 2, 4];
-
-assertArraysEqual(array3, array4); // This should log: "🛑 Assertion Failed: 1,2,3 and 1,2,4 are not equal"
+  it("should return false for [1, 2, 3] and [1, 2, 4]", () => {
+    const array3 = [1, 2, 3];
+    const array4 = [1, 2, 4];
+    assert.isFalse(assertArrayEqual(array3, array4));
+  });
+});

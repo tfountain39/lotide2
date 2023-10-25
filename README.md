@@ -1,6 +1,10 @@
 # lotide2
 
 A mini clone of the [Lodash](https://lodash.com) library.
+Sources: 
+ChatGPT, 
+MDN,
+https://www.npmjs.com/package/lotide-from-todd, 
 
 ## Purpose
 
@@ -12,15 +16,35 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @username/lotide`
+`npm install @tfountain39/lotide2`
 
 **Require it:**
 
-`const _ = require('@username/tfountain39');`
+`const _ = require('@tfountain39/lotide2');`
 
 **Call it:**
 
-`const results = _.tail([1, 2, 3]) // => [2, 3]`
+```javascript
+const assertArraysEqualExample = _.assertArrayEqual([1, 2, 3], [1, 2, 3]); // => Assertion Passed: 1,2,3 === 1,2,3
+const assertEqualExample = _.assertEqual("Lighthouse Labs", "Bootcamp"); // => Assertion Failed: Lighthouse Labs !== Bootcamp
+const tailResults = _.tail([1, 2, 3]); // => [2, 3]
+const headResult = _.head([1, 2, 3]); // => 1
+const middleResult = _.middle([1, 2, 3, 4, 5]); // => [3]
+const countLettersExample = _.countLetters("lighthouse labs"); // => { l: 2, i: 1, g: 1, h: 2, t: 1, o: 1, u: 1, s: 2, e: 1, a: 1, b: 1 }
+const countOnlyExample = _.countOnly(["a", "b", "a"], { "a": true, "b": true }); // => { a: 2, b: 1 }
+const eqObjectsExample = _.eqObjects({ a: "1", b: "2" }, { b: "2", a: "1" }); // => true
+const findKeyExample = _.findKey({
+  "Blue Hill": { stars: 1 },
+  "Akaleri":   { stars: 3 },
+  "noma":      { stars: 2 },
+  "elBulli":   { stars: 3 },
+  "Ora":       { stars: 2 },
+  "Akelarre":  { stars: 3 }
+}, x => x.stars === 2); // => "noma"
+const findKeyByValueExample = _.findKeyByValue({ a: "1", b: "2", c: "3" }, "2"); // => "b"
+const letterPositionsExample = _.letterPositions("hello"); // => { h: [0], e: [1], l: [2, 3], o: [4] }
+const mapExample = _.map([1, 2, 3], num => num * 2); // => [2, 4, 6]
+```
 
 ## Documentation
 
@@ -39,17 +63,3 @@ The following functions are currently implemented:
 * `tail(...)`: This function removes the first item in an array
 * `takeUntil(...)`: This function iterates through an array and collects elements until the callback condition is metription
 * `without(...)`: This functions removes specified items from an array and returns that array after transformation
-
-  head,
-  tail,
-  middle,
-  assertEqualObjects,
-  countLetters,
-  countOnly,
-  eqArrays
-  eqObjects,
-  findKey,
-  findKeyByValue,
-  map,
-  takeUntil,
-  without

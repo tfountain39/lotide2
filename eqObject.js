@@ -1,17 +1,9 @@
 // #eqObjects
 
-// TEST FUNCTION
-const assertEqual = function(actual, expected) {
-  actual === expected
-    ? console.log(`✅Assertion Passed: ${actual} === ${expected}`)
-    : console.log(`🛑Assertion Failed: ${actual} !== ${expected}`);
-};
-
-
 // MAIN FUNCTION
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function(obj1, obj2) {
+const eqObject = function(obj1, obj2) {
   // obtain and list keys
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
@@ -34,13 +26,5 @@ const eqObjects = function(obj1, obj2) {
   return true;
 };
 
-// Test code
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject , anotherShirtObject), true); // => true
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false); // => false
-
 // EXPORT
-module.exports = eqObjects;
+module.exports = eqObject;

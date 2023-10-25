@@ -1,16 +1,31 @@
 // #mapTest
 
 // TEST FUNCTION
-const assertArraysEqual = require('./assertArraysEqual.js')
-const map = require('./map.js')
+const expect = require('chai').expect;
+const map = require('../map.js');
 
 
 // TEST CODE
-const words = ["ground", "control", "to", "major", "tom"];
+describe('#map', () => {
+  it('should correctly apply the callback to each item in the array', () => {
+    const result = map([1, 2, 3], num => num * 2);
+    expect(result).to.deep.equal([2, 4, 6]);
+  });
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+  it('should return an array of the same length as the input array', () => {
+    const array = ['apple', 'banana', 'cherry'];
+    const result = map(array, word => word.length);
+    expect(result).to.have.lengthOf(array.length);
+  });
 
-assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']);
-assertArraysEqual(map([1, 2, 3], num => num * 2), [2, 4, 6]);
-assertArraysEqual(map([true, false, true], bool => !bool), [false, true, false]);
+  it('should return an empty array when given an empty array', () => {
+    const result = map([], num => num * 2);
+    expect(result).to.be.empty;
+  });
+
+  it('should handle arrays of strings correctly', () => {
+    const fruits = ['apple', 'banana', 'cherry'];
+    const result = map(fruits, fruit => fruit.toUpperCase());
+    expect(result).to.deep.equal(['APPLE', 'BANANA', 'CHERRY']);
+  });
+});
